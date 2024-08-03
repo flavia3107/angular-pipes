@@ -1,12 +1,14 @@
 {
-  "name": "pipes-deep-dive",
+  "name": "angular-pipes",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy": "ng build --configuration production --output-path=dist/angular-pipes --base-href=/angular-pipes/",
+    "deploy": "gh-pages -d dist/angular-pipes"
   },
   "private": true,
   "dependencies": {
@@ -28,11 +30,14 @@
     "@angular/compiler-cli": "^18.0.0",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.1",
+    "gh-pages": "^6.1.1",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.4.2"
-  }
+  },
+  "homepage": "https://flavia3107.github.io/angular-pipes"
 }
