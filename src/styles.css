@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   background-color: #132429;
-  color: #b8def9;
+  color: #dadbdc;
 }
 
 main {
@@ -26,9 +26,9 @@ main {
 .temperatures {
   padding: 2rem;
   border-radius: 4px;
-  background: linear-gradient(#505a5d, #717678);
+  background: #2b3a3f;
   font-size: 1.25rem;
-  box-shadow: 0 0 8px rgba(25, 25, 24, 0.7)
+  box-shadow: 0 0 8px rgba(25, 25, 24, 0.7);
 }
 
 .temperatures header {
@@ -64,4 +64,46 @@ main {
 
 .temperatures li {
   margin: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  text-decoration: none;
+  padding: 1rem 0 0 1rem;
+}
+
+.logo > img {
+  height: 35px;
+}
+
+.logo-txt {
+  padding-left: 7px;
+  display: flex;
+  flex-direction: column;
+  color: #fcfcfc;
+  align-items: flex-start;
+}
+
+.logo-img {
+  width: 2rem;
+  margin-right: 3px;
+}
+
+.logo-txt h1,
+.logo-txt span {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  letter-spacing: 4px;
+}
+
+.logo-txt h1 {
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+.logo-txt span {
+  font-weight: lighter;
+  font-size: 0.85rem;
 }
