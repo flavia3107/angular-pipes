@@ -12,8 +12,8 @@ html {
 
 body {
   margin: 0;
-  background-color: #132429;
-  color: #dadbdc;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  color: #232323;
 }
 
 main {
@@ -26,10 +26,11 @@ main {
 .temperatures {
   padding: 2rem;
   border-radius: 4px;
-  background: #2b3a3f;
+  background: #232323;
   font-size: 1.25rem;
-  box-shadow: 0 0 8px rgba(25, 25, 24, 0.7);
+  box-shadow: 0 0 4px #c1c1c1;
   width: 48%;
+  color: #d0d0d0;
 }
 
 .temperatures header {
@@ -47,7 +48,7 @@ main {
 .temperatures h2 {
   text-align: left;
   font-size: 1rem;
-  color: #ffffff;
+  color: #232323;
   margin: 0;
 }
 
@@ -99,7 +100,7 @@ span {
   padding-left: 7px;
   display: flex;
   flex-direction: column;
-  color: #fcfcfc;
+  color: #232323;
   align-items: flex-start;
 }
 
@@ -125,4 +126,23 @@ span {
 .logo-txt span {
   font-weight: lighter;
   font-size: 0.85rem;
+}
+
+::-webkit-scrollbar {
+  height: 0.563rem;
+  width: 0.563rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #777777;
+  width: 0.563rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  width: 0.563rem;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
