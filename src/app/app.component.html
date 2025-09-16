@@ -16,10 +16,22 @@
         <p>{{ currentDate | date:'medium' }}</p>
       </div>
     </header>
-    <p>New York: {{ currentTemperatures.newYork | temp:'cel':'fah' }}</p>
-    <p>Berlin: {{ currentTemperatures.berlin | temp:'cel' }}</p>
-    <p>Paris: {{ currentTemperatures.paris | temp:'fah':'cel' }}</p>
-    <p>Chicago: {{ currentTemperatures.chicago | temp:'fah' }}</p>
+    <div class="item">
+      <span>City</span>
+      <p class="details">
+        <span>Before</span>
+        <span> After</span>
+      </p>
+    </div>
+    @for (item of currentTemperatures | keyvalue; track item.key) {
+    <div class="item">
+      <span>{{item.key}}</span>
+      <p class="details">
+        <span>{{item.value }}</span>
+        <span> {{ item.value | temp:'cel':'fah' }}</span>
+      </p>
+    </div>
+    }
   </article>
 
   <article class="temperatures">
@@ -32,7 +44,10 @@
     </header>
     <ul>
       @for (temperature of historicTemperatures; track temperature) {
-      <li (click)="onReset($index)">{{ temperature | temp:'cel' }}</li>
+      <li (click)="onReset($index)">
+        <span>{{ temperature }}</span>
+        <span>{{ temperature | temp:'cel' }}</span>
+      </li>
       }
     </ul>
   </article>

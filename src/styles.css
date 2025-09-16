@@ -18,7 +18,7 @@ body {
 
 main {
   display: flex;
-  gap: 5rem;
+  gap: 2rem;
   margin: 3rem auto;
   max-width: 55rem;
 }
@@ -29,6 +29,7 @@ main {
   background: #2b3a3f;
   font-size: 1.25rem;
   box-shadow: 0 0 8px rgba(25, 25, 24, 0.7);
+  width: 48%;
 }
 
 .temperatures header {
@@ -64,6 +65,24 @@ main {
 
 .temperatures li {
   margin: 0.5rem;
+  cursor: pointer;
+}
+
+.item,
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  text-transform: capitalize;
+}
+
+.details {
+  display: flex;
+  width: 11rem;
+  justify-content: space-between;
 }
 
 .logo {
