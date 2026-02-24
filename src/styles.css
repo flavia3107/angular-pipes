@@ -110,3 +110,21 @@ a {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+@media screen and (max-width: 730px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem;
+    overflow: hidden;
+  }
+
+  .temperatures {
+    overflow: auto;
+    width: 100%;
+  }
+
+  .item {
+    width: 22rem;
+  }
+}
